@@ -44,13 +44,13 @@ export function storeWallet(wallet: Wallet, name: string, password: string): voi
 }
 
 // store a wallet encrypted in localstorage
-export function removeWallet(address: string, password: string): void {
+export function removeWallet(address: string): void {
   const storedWallet = loadFromStorage(address)
   if (!storedWallet) throw new Error('No wallet found for requested address')
 
   // make sure the user really wants to delete the wallet
   // throws if password is incorrect
-  testPassword(address, password)
+  // testPassword(address, password)
 
   removeFromStorage(address)
 }
