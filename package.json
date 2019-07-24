@@ -1,6 +1,6 @@
 {
   "name": "bitsong-js-keys",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JS version of BitSong Wallet signer and address generation",
   "keywords": [
     "cosmos",
